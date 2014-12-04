@@ -16,9 +16,7 @@ int main(){
       prnTitles();
       while (!feof(fptr)){
          readItem(&I, fptr);
-         if (!feof(fptr)){
-            prnItemRow(&I);
-         }
+         prnItemRow(&I);
       }
       fclose(fptr);
    }
